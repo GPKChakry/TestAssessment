@@ -23,6 +23,7 @@ class PostsViewController: UITableViewController {
             guard let `self` = self else {return}
             self.tableView.reloadData()
         }
+        viewModel.loadNextArticle {}
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.posts.count

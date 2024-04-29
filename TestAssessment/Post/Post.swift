@@ -16,3 +16,8 @@ struct Post: Codable {
         case id, title, body
     }
 }
+
+struct Article: Codable {
+    let title: String
+    let storyTitle: String?
+}

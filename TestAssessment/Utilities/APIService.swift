@@ -11,7 +11,6 @@ struct Resource<T: Codable> {
     let urlString: String
     let params: [String : AnyObject]?
     let headers: [String : String]
-    let pageNumber: Int
 }
 
 struct APIService {
